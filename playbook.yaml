@@ -16,3 +16,15 @@
             update_cache: yes
             name: nodejs
             state: present
+
+      - name: "install Mongo"
+        apt:
+            name: mongodb
+            state: present
+            update_cache: yes
+
+      - name: "Ensure MongoDB is running on start"
+        systemd:
+            name: mongodb
+            enabled: yes
+            state: started
