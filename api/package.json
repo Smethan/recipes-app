@@ -1,0 +1,23 @@
+{
+	"name": "recipe-api",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"watch": "nodemon index.js",
+		"test": "NODE_ENV=test mocha --recursive"
+	},
+	"keywords": [],
+	"type": "module",
+	"authors": "Ethan Hargus",
+	"license": "ISC",
+	"dependencies": {
+		"body-parser": "^1.20.0",
+		"chai-http": "^4.3.0",
+		"express": "^4.17.1",
+		"mongoose": "^6.5.2"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.12"
+	}
+}

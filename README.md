@@ -35,10 +35,15 @@ Legacy option, but still supported
 
 Vagrant, but better
 
+Seriously use this instead.
+
+To connect just either go to localhost in a browser or ping localhost:3010/api/recipes for api access
+
 ### **Requirements**
 
 -   Docker
 
 ### **Instructions**
 
-TODO
+1. run `docker-compose up`
+2. profit
