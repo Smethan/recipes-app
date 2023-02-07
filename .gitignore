@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 /.vagrant
+/data
 
 # testing
 /coverage

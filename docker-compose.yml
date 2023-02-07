@@ -1,0 +1,25 @@
+version: "3.8"
+services:
+    app:
+        container_name: "app"
+        depends_on:
+            - mongodb
+        environment:
+            MONGO_IP: mongodb
+        restart: "always"
+        build: "./api"
+        ports:
+            - 3010:3010
+    mongo-seed:
+        depends_on:
+            - mongodb
+        build: "./mongo-seed"
+    mongodb:
+        container_name: "mongodb"
+        image: "mongo:latest"
+        volumes:
+            - ./data:/data/recipes
+        ports:
+            - 27017:27017
+        expose:
+            - 27017
