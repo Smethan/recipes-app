@@ -1,6 +1,14 @@
 version: "3.8"
 services:
     app:
+        container_name: "app"
+        depends_on:
+            - api
+        restart: "always"
+        build: "./"
+        ports:
+            - 3000:3000
+    api:
         container_name: "api"
         depends_on:
             - mongodb
