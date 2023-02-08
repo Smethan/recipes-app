@@ -6,9 +6,10 @@
 }
 
 .main:hover {
-    box-shadow: 3px -10px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 3px -10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 3px -10px 5px 0px rgba(0,0,0,0.75);
+    filter: brightness(120%);
+    box-shadow: 3px -10px 5px 0px rgba(191,223,191,0.77);
+    -webkit-box-shadow: 3px -10px 5px 0px rgba(191,223,191,0.77);
+    -moz-box-shadow: 3px -10px 5px 0px rgba(191,223,191,0.77);
 }
 h1 {
     text-align: center;
