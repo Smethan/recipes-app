@@ -1,15 +1,31 @@
 version: "3.8"
 services:
     app:
+        container_name: "app"
+        depends_on:
+            - api
+        restart: "always"
+        build: "./"
+        ports:
+            - 3000:3000
+        volumes:
+            - ./:/usr/app
+            - /usr/app/node_modules
+        stdin_open: true
+    api:
         container_name: "api"
         depends_on:
             - mongodb
         environment:
             MONGO_IP: mongodb
+            bucket_name: "testBucket"
         restart: "always"
         build: "./api"
         ports:
             - 3010:3010
+        volumes:
+            - ./api:/usr/api
+            - /usr/api/node_modules
     mongo-seed:
         depends_on:
             - mongodb
