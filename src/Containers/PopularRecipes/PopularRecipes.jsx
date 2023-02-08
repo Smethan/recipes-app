@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import NavBottom from '../../Components/Nav/NavBottom.jsx';
 import RecipeCard from "../../Components/RecipeCard/RecipeCard.jsx"
 import "./PopularRecipes.scss"
 
