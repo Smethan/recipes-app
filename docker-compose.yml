@@ -18,6 +18,7 @@ services:
             - mongodb
         environment:
             MONGO_IP: mongodb
+            bucket_name: "testBucket"
         restart: "always"
         build: "./api"
         ports:

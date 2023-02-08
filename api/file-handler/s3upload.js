@@ -1,5 +1,5 @@
 import multer from "multer";
-import { multer as multerS3 } from "multer-s3";
+import multerS3 from "multer-s3";
 import { S3Client } from "@aws-sdk/client-s3";
 
 const s3Config = {
