@@ -1,8 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-
-$font-family: 'Lora', serif;
+@use "../../assets/variables" as *;
 
 
+.main {
+    font-family: $font-family;
+}
+
+.main:hover {
+    box-shadow: 3px -10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px -10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px -10px 5px 0px rgba(0,0,0,0.75);
+}
 h1 {
     text-align: center;
     margin: 10px;

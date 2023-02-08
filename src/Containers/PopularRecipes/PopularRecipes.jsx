@@ -16,7 +16,7 @@ const PopularRecipes = () => {
   }
   useEffect(getPopularRecipes, [])
   return (
-    <div>
+    <div className="main">
       <h1>Popular Recipes</h1>
       <div className="grid-container">
      {popular && popular.map((recipes) => {
