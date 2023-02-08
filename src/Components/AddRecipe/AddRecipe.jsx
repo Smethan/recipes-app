@@ -5,7 +5,8 @@ const AddRecipe = () => {
 	const [prepTime, setPrepTime] = useState("");
 	const [cookTime, setCookTime] = useState("");
 	const [servings, setServings] = useState("");
-	const [ingredients, setIngredients] = useState([]);
+	const [ingredients, setIngredients] = useState([{}]);
+	const [directions, setDirections] = useState([{}]);
 
 	const handleTitle = (e) => {
 		setTitle(e.target.value);
@@ -18,6 +19,30 @@ const AddRecipe = () => {
 	};
 	const handleServings = (e) => {
 		setServings(e.target.value);
+	};
+
+	const handleArrays = (e, i) => {
+		const { name, value } = e.target;
+		switch (name) {
+			case "ingredient":
+				setIngredients((PrevState) => {
+					let temp = PrevState;
+					temp[i].name = value;
+					return temp;
+				});
+				break;
+			case "direction":
+				setDirections((PrevState) => {
+					let temp = PrevState;
+					temp[i].content = value;
+
+					return temp;
+				});
+				break;
+
+			default:
+				break;
+		}
 	};
 
 	const addRecipe = {
@@ -53,6 +78,61 @@ const AddRecipe = () => {
 
 				<label> Servings </label>
 				<input type="text" required value={servings} onChange={handleServings} />
+
+				<ul style={{ listStyle: "none" }}>
+					{ingredients.map((ingredient, i) => {
+						const index = i;
+						return (
+							<li>
+								<input
+									type="text"
+									name="ingredient"
+									value={ingredient.name}
+									placeholder="Enter ingredient name"
+									onChange={(e) => {
+										handleArrays(e, i);
+									}}
+								/>
+							</li>
+						);
+					})}
+					<li>
+						<button
+							onClick={() => {
+								setIngredients([...ingredients, {}]);
+							}}
+						>
+							Add Ingredient
+						</button>
+					</li>
+				</ul>
+				<ul style={{ listStyle: "none" }}>
+					{directions.map((direction, i) => {
+						const index = i;
+						return (
+							<li>
+								<input
+									type="text"
+									name="direction"
+									value={direction.content}
+									placeholder="Enter direction name"
+									onChange={(e) => {
+										handleArrays(e, i);
+									}}
+								/>
+							</li>
+						);
+					})}
+					<li>
+						<button
+							onClick={() => {
+								setDirections([...directions, {}]);
+							}}
+						>
+							Add Direction
+						</button>
+					</li>
+				</ul>
 			</form>
 			<p>
 				{" "}
