@@ -2,11 +2,13 @@ import express from "express";
 import router from "./routes/recipe.js";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
+import cors from "cors";
 
 const app = express();
 const port = process.env.PORT || 3010;
 
 app.use(bodyParser.json());
+app.use(cors());
 
 mongoose.connect(`mongodb://${process.env.MONGO_IP}:27017/recipes`, {
 	useNewUrlParser: true,
