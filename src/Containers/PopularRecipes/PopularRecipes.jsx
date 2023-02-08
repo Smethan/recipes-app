@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import RecipeCard from "../../Components/RecipeCard/RecipeCard.jsx"
+import "./PopularRecipes.scss"
 
 const PopularRecipes = () => {
   const [popular, setPopular] = useState("")
@@ -17,9 +18,11 @@ const PopularRecipes = () => {
   return (
     <div>
       <h1>Popular Recipes</h1>
+      <div className="grid-container">
      {popular && popular.map((recipes) => {
       return <RecipeCard recipes={recipes} />
      })}
+     </div>
       
     </div>
   )

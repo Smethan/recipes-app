@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+$font-family: 'Lora', serif;
+
+
+h1 {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-family: $font-family;
+}
+
+.grid-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2px;
+}

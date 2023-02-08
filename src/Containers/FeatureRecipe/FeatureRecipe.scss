@@ -15,7 +15,8 @@ $background-color: whitesmoke;
 .recipe-card-container {
     margin: 5px;
     padding: 5px;
-    width: 50%;
+    width: 100%;
+    margin-bottom: 40px;
 
         h1 {
             display: flex;
@@ -38,7 +39,7 @@ button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-left: 42%;
+    margin-left: 45%;
     margin-bottom: 10px;
     background-color: #fff;
     border-radius: 2px;

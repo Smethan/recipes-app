@@ -4,6 +4,7 @@ import "./RecipeCard.scss"
  const RecipeCard = (props) => {
   const {name, description, image_url } = props.recipes
   return (
+    <main>
     <div className="feat-recipecard">
         <div className="card-contents">
       <img className="image" src={image_url} alt= {name} height="300" width="100"/>
@@ -13,6 +14,7 @@ import "./RecipeCard.scss"
       </div>
     </div>
     </div>
+    </main>
   )
 }
 
