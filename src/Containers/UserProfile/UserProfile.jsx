@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import RecipeCard from "../../Components/RecipeCard/RecipeCard"
 import SearchBox from "../../Components/SearchBox/SearchBox";
+import AddRecipe from '../../Components/AddRecipe/AddRecipe';
 
 
 const UserProfile = () => {
@@ -42,6 +43,7 @@ const UserProfile = () => {
     <div>
       <nav>
         <SearchBox handleInput={handleInput} searchTerm={searchTerm} />
+        <AddRecipe/>
       </nav> 
       <h1>My Recipes</h1>
       { searchTerm ? searchedRecipes : allRecipes }

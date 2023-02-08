@@ -17,7 +17,9 @@ import React from 'react'
       </ul>
       <h2>Directions</h2>
       <ol>
-        <li> {directions} </li>
+        {directions.map(direction => {
+          return <li> {directions} </li>
+        })}
       </ol>
     </div>
   )
