@@ -3,17 +3,18 @@
 
 $title-family: 'Lora', serif;
 $para-family: 'Lora', serif;
+$background-color: whitesmoke;
 
 * {
     margin: 2px;
     padding: 1px;
+    background-color: $background-color;
 }
 
 
 .recipe-card-container {
     margin: 5px;
     padding: 5px;
-    border: solid rgb(191, 223, 191);
     width: 50%;
 
         h1 {
@@ -26,6 +27,13 @@ $para-family: 'Lora', serif;
         }
 }
 
+.card:hover {
+    filter: brightness(120%);
+    box-shadow: 7px 8px 5px 0px rgba(191,223,191,0.77);
+    -webkit-box-shadow: 7px 8px 5px 0px rgba(191,223,191,0.77);
+    -moz-box-shadow: 7px 8px 5px 0px rgba(191,223,191,0.77);;
+}
+
 button {
     display: inline-flex;
     justify-content: center;
@@ -33,7 +41,9 @@ button {
     margin-left: 42%;
     margin-bottom: 10px;
     background-color: #fff;
-    border-radius: 12px;
+    border-radius: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
     box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, .1) 0 2px 0px;
     box-sizing: border-box;
     color: #121212;

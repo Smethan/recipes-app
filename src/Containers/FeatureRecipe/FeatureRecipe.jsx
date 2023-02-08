@@ -18,11 +18,13 @@ const FeatureRecipe = () => {
   useEffect(getFeaturedRecipe, [])
   return (
     <div className="recipe-card-container">
+      <div className="card">
       <h1>Recipe of the Month</h1>
       {featured && featured.map((recipes) => {
         return <RecipeCard recipes= {recipes} />
       })}
       <button>GET THE RECIPE</button>
+    </div>
     </div>
   )
 }
