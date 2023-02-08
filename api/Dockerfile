@@ -1,7 +1,7 @@
 FROM node:16
 WORKDIR /usr/api 
-COPY ./ /usr/api
+COPY ./package*.json ./
 RUN npm install 
 
 EXPOSE 3010 
-CMD ["node", "index.js"]
+CMD ["npm", "run", "watch"]
