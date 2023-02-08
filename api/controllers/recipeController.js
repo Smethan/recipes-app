@@ -46,3 +46,12 @@ export const deleteRecipe = (req, res) => {
 			console.log(err);
 		});
 };
+
+export const uploadImage = (req, res) => {
+	try {
+		res.json(req.file.location);
+	} catch (error) {
+		console.log(error);
+		res.send({ message: error });
+	}
+};
