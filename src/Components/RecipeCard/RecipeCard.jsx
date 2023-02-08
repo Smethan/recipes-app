@@ -3,7 +3,7 @@ import React from "react";
 const RecipeCard = (props) => {
 	const { title, prep_time, cook_time, servings, ingredients, directions } = props.recipes;
 	return (
-		<div className="RecidpeCard">
+		<div className="RecipeCard">
 			{/* <img src={image_url} alt= {name} height="300" width="100"/> */}
 			<h1>{title} </h1>
 			<p>Prep-time: {prep_time} </p>
