@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
+$font-family: 'Lora', serif;
+
+
+.navbar-container {
+  .navbar {
+    font-family: $font-family;
+    border-bottom: solid rgb(191, 223, 191);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10;
+    margin-top: 10px;
+    padding: 10;
+    padding-bottom: 10px;
+  }
+
+  .ham {
+    margin-left: 10px;
+  }
+
+  .profile {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .nav {
+    grid-column: 1 / -1;
+  }
+}
