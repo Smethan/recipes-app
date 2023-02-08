@@ -1,13 +1,16 @@
 @use "../../assets/variables" as *;
 
+
+
+
 .feat-recipecard {
     margin: 5px;
     padding: 2px;
     border-radius: 0.25;
+    background-color: $card-background;
 
    .card-contents {
-   
-
+        background-color: $card-background;
         .image {
         float: center;
         object-fit: contain;
@@ -16,18 +19,22 @@
         }
 
         .desc-contents {
-        border: 0.5px solid green;
+        border: 1px solid whitesmoke;
         margin: 10px;
         padding: 10px;
+        background-color: $card-background;
         }
    }
         h1 {
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: $card-background;
         }
         p {
             text-align: center;
             line-height: 150%;
+            background-color: $card-background;
         }
 }
+
