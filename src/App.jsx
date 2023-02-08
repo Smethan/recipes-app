@@ -2,6 +2,7 @@
 import FeatureRecipe from './Containers/FeatureRecipe/FeatureRecipe';
 import PopularRecipes from './Containers/PopularRecipes/PopularRecipes';
 import Nav from "./Components/Nav/Nav"
+import InfoBar from './Components/InfoBar/InfoBar';
 import { BrowserRouter as Router, Route, Swithc } from 'react-router-dom';
 const App = () => {
   return (
@@ -11,6 +12,9 @@ const App = () => {
       <Nav/>
       <section>
         <FeatureRecipe/>
+      </section>
+      <section>
+        <InfoBar />
       </section>
     <main>
       <section>
