@@ -5,7 +5,7 @@ const FeatureRecipe = () => {
   const [featured, setFeatured] = useState("")
   
   const getFeaturedRecipe = () => {
-    fetch('https://api.punkapi.com/v2/beers/random')
+    fetch('localhost:3010/api/recipes')
     .then((res) => {
       return res.json()
     })
