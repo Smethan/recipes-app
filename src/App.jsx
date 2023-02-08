@@ -10,20 +10,14 @@ const App = () => {
     <div className="App">
       <Nav/>
       <div className="body">
-        {/* <Routes> */}
-          {/* <Route exact path="/"> */}
+        <Routes>
+          <Route element={   
             <section>
               <FeatureRecipe/>
-            </section>
-            
-            <section>
               <PopularRecipes/>
-            </section>
-          {/* </Route> */}
-           {/* <Route  path="/profile">
-           <UserProfile/>
-          </Route> */}
-        {/* </Routes>  */}
+            </section>} exact path="/"/> 
+          <Route element={ <UserProfile/>} path="/profile" />
+        </Routes> 
       </div>
     </div>
   </Router>
