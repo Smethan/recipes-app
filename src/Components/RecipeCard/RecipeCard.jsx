@@ -11,7 +11,9 @@ import React from 'react'
       <p>Servings: {servings} </p>
       <h2>Ingredients</h2>
       <ul>
-        <li> {ingredients} </li>
+        {ingredients.map(ingredients => {
+          return <li>{ingredients}</li>
+        })} 
       </ul>
       <h2>Directions</h2>
       <ol>
