@@ -1,28 +1,160 @@
-[
-	{
-		"title": "Grilled Pork Chops",
-		"prep_time": "48 minutes",
-		"cook_time": "28 minutes",
-		"total_time": "2 hours 16 minutes",
-		"servings": "4",
-		"ingredients": [
-			"4.5 cups of pork chop brine",
-			"4 bone-in pork rib chops about 2 inches thick",
-			"1.5 tsp Morton's kosher salt",
-			"1 tsp ground cumin",
-			"1/2 tsp ground black pepper",
-			"1/4 tsp sweet paprika",
-			"pinch of cayenne pepper",
-			"1 tbs vegetable oil"
-		],
-		"directions": [
-			"In a large pot or bowl, add the cooled brine and the pork chops, making sure all of them are fully submerged in the brine. You can place a heavy plate on top to help them stay submerged. Cover and refrigerate for 1 hour.",
-			"Remove the pork chops from the brine. Rinse them under cold running water, then pat them dry with paper towels. Lay the pork chops on a platter so that they come to room temperature while the grill heats.",
-			"Heat grill to 400 degrees F",
-			"In a small bowl, combine the salt, cumin, black pepper, paprika, and cayenne pepper. Rub both sides of the pork chops with the oil. Sprinkle and massage the spice rub all over them.",
-			"Once the grill reaches 400 degrees F, place the pork chops on the hot side of the grill and press down firmly with a grill spatula.Sear for 4 minutes without moving them. Flip them over and repeat.",
-			"Move the seared prok chops to the cool side of the grill, then close the lid. Cook for 15 - 20 minutes, or until meat thermometer inserted in the center of the pork chop reads 145 degrees F.",
-			"Allow pork chops to rest for 5 minutes for serving."
-		]
-	}
-]
+[{
+  "_id": {
+    "$oid": "63e29b5af5cbbf8fe39fe5dd"
+  },
+  "title": "Creamy Chicken Enchilada Soup",
+  "prep_time": "20 minutes",
+  "cook_time": "20 minutes",
+  "total_time": "40 miutes",
+  "servings": "6 - 8 servings",
+  "ingredients": [
+    "For the soup: 1 tbs olive oil, 1 medium white onion, 1 clove garlic, 1 tbs ancho chili powder, 1 tsp dried oregano, 2 tsp brown sugar, 1/2 tsp salt, 2- 28 oz cans of whole, peeled tomatoes with juice, 4 oz shredded monterey jack cheese, 1 cup chicken stock, 1/2 cup heavy cream, 3 cups shredded cooked chicken, 3 cups corn kernels, fresh or frozen, 1- 14.5 oz can black beans, rinsed and drained",
+    "For the cream: 1/4 cup sour cream, 1/4 cup heavy cream",
+    "For garnishing: cilantro leaves, thinly sliced jalepenos, lime wedges, crumbled ctija cheese (or feta), diced avocado, warm corn tortillas, diced white onion, shredded monterey jack cheese"
+  ],
+  "directions": [
+    "In a large pot over medium heat, heat the oil. Add the onion and cook for 5 to 7 minutes, stirring often, until soft and golden. Stir in the garlic, chili powder, oregano, brown sugar, and salt. Cook, stirring often, for 1 minute.",
+    "Stir in the tomatoes and bring the mixture to a simmer. Break up the tomatoes—I use a potato masher, but you could do it with a wooden spoon—and simmer uncovered for 10 minutes. Stir in the shredded cheese.",
+    "Carefully, ladle the soup into a blender. Cover the blender with a lid and cover the lid with a folded dish towel. Starting on low speed, purée the soup for about 30 seconds. Gradually increase the speed to medium-high and blend for another minute, until the soup is smooth. You may need to blend the soup in batches or you could use an immersion blender to blend the soup directly in the pot.",
+    "Return the soup to the pot and set it over medium heat. Stir in the stock, cream, chicken, corn, and beans. Bring to a gentle simmer, stirring often. Taste and adjust seasoning with more salt if you would like.",
+    "In a small bowl, stir the sour cream and milk or cream together until smooth. The consistency should be pourable, like thick cream.",
+    "Ladle the soup into bowls and spoon some homemade crema over each. Lay out the garnishes on the table in small individual bowls and let everyone top their soup to their liking."
+  ],
+  "image": ""
+},{
+  "_id": {
+    "$oid": "63e29b5af5cbbf8fe39fe5de"
+  },
+  "title": "Creamy Baked Mac and Cheese",
+  "prep_time": "20 minutes",
+  "cook_time": "25 minutes",
+  "total_time": "45 minutes",
+  "servings": "6 - 8 servings",
+  "ingredients": [
+    "For the topping: 2 tablespoons melted unsalted butter, 2/3 cup plain panko breadcrumbs, 1/4 cup shredded Parmesan, 1/4 teaspoon kosher salt, 1/8 teaspoon smoked paprika, Pinch cayenne pepper ",
+    "For the macaroni: 10 ounces elbow macaroni pasta or cavatappi, 1 tablespoon kosher salt, 1 tablespoon unsalted butter ",
+    "For the sauce: 4 ounces cream cheese, 1 (10-ounce) brick cheddar cheese, shredded (about 3 cups thickly shredded cheddar cheese), 2 1/2 cups whole milk, 1/2 teaspoon white pepper, 1/2 teaspoon kosher salt, 1/2 teaspoon mustard powder, 1/4 teaspoon turmeric powder"
+  ],
+  "directions": [
+    "Preheat the oven to 350°F. Butter an 8 x 8 pan and set aside.",
+    "In a small bowl, melt 2 tablespoons of butter. Add panko, Parmesan, salt, smoked paprika, and cayenne pepper. Set aside.",
+    "Bring a pot of water to a boil over medium high heat. Add the macaroni and salt. Cook until the pasta is firm-tender, or al dente. Usually, this takes about a minute or two less than the cook time recommended on the box.",
+    "Drain the pasta into a colander. Add 1 tablespoon butter to the same pot you boiled the pasta in. Add the drained pasta back to the pan and stir to coat. Remove from heat. You will get back to it later.",
+    "In a large, high sided skillet set over medium heat, add the cream cheese, 1 cup of milk, and all of the spices. Break apart and smash the cream cheese with a spatula as it begins to soften and melt. Once the cream cheese is in pieces the size of a nickel or smaller, whisk the mixture until it is homogeneous and thickened, about 4 to 5 minutes.",
+    "Whisk the remaining 1 1/2 cups of milk into the sauce. Add the cheddar cheese one cup at a time, whisking continuously. Make sure each cup is incorporated before adding the next.",
+    "Once the sauce is thick like heavy whipping cream and homogeneous, add the pasta. Stir to coat. It will look soupy. That’s what you want. Transfer the mixture to the buttered 8x8 pan. Smooth the top.",
+    "Sprinkle the panko mixture over the top of the mac and cheese. Place in oven for 20 to 25 minutes until the top is golden brown and the cheese sauce is bubbling around the edges. Cool briefly before serving."
+  ],
+  "image": ""
+},{
+  "_id": {
+    "$oid": "63e29b5af5cbbf8fe39fe5df"
+  },
+  "title": "Ginger Garlic Sesame Shrimp",
+  "prep_time": "20 minutes",
+  "cook_time": "10 minutes",
+  "total_time": "30 minutes",
+  "servings": "2 - 3 servings",
+  "ingredients": [
+    "For the marinade: 1/4 cup soy sauce (use gluten-free soy sauce for gluten-free version), 2 tablespoons seasoned rice vinegar, 2 teaspoons brown sugar, 2 tablespoons extra virgin olive oil, 1 teaspoon dark sesame oil, 3 cloves garlic, minced (about 1 tablespoon), 1 tablespoon grated ginger",
+    "For the Shrimp: 1 pound (16-20 count) shrimp, peeled and deveined, 1 tablespoon peanut oil or canola oil, 3 green onions sliced on the diagonal, 1 tablespoon sesame seeds"
+  ],
+  "directions": [
+    "In a medium bowl whisk together the soy sauce, seasoned rice vinegar, and brown sugar until the sugar has dissolved. Then whisk in the olive oil, sesame oil, minced garlic, and grated ginger. Place the shrimp in the bowl with the marinade. Toss to coat with the marinade and chill until ready to cook.",
+    "Toast the sesame seeds in a small sauté pan on medium high heat until lightly browned.",
+    "Heat cooking oil in a large stick-free sauté pan or wok (can use seasoned cast iron) on high heat. When the oil is shimmering hot, almost smoking, use a slotted spoon to move the shrimp from the marinade into the hot pan. (Watch out, it will splatter.) Stir-fry for a minute.",
+    "Add half of the sliced green onions. Continue to stir-fry, turning the individual shrimp over if necessary, until the shrimp are pink and just cooked through. No more than 2 minutes max total cooking time, a minute on each side.",
+    "Remove shrimp from pan and transfer to a serving bowl. Place the remaining marinade in the hot sauté pan and simmer it until it has reduced to a syrup.",
+    "Pour over the shrimp. Toss to coat. Sprinkle the shrimp with toasted sesame seeds and remaining green onions.",
+    "Serve immediately with rice, soba noodles, rice noodles, bok choy, spinach, broccoli, or asparagus."
+  ],
+  "image": ""
+},{
+  "_id": {
+    "$oid": "63e29b5af5cbbf8fe39fe5e0"
+  },
+  "title": "Monkey Bread",
+  "prep_time": "15 minutes",
+  "cook_time": "35 minutes",
+  "total_time": "50 minutes",
+  "servings": "12 servings",
+  "ingredients": [
+    "1/2 cup (100g) granulated sugar",
+    "2 teaspoons ground cinnamon",
+    "2 (16.3-ounce) cans buttermilk biscuit dough (not flaky)",
+    "3/4 cup (170g) unsalted butter, plus more for Bundt pan",
+    "3/4 cup (160g) packed light brown sugar",
+    "1 teaspoon vanilla extract"
+  ],
+  "directions": [
+    "Grease a 12-cup Bundt pan liberally with butter or nonstick baking spray. Set it aside.",
+    "In a large bowl, whisk together the granulated sugar and cinnamon.",
+    "Separate the biscuit dough and cut each biscuit into 6 evenly sized pieces.",
+    "Add the biscuit pieces to the bowl of cinnamon sugar, and use your hands to toss and evenly coat each piece with the cinnamon sugar. Transfer the coated dough and any extra cinnamon sugar into the prepared Bundt pan, and distribute them evenly in the pan.",
+    "In a small saucepan over medium heat, melt the butter and brown sugar. Cook for a few minutes, stirring, until smooth and fully combined. Take the butter mixture off the heat and stir in the vanilla extract. Evenly pour the butter mixture over the dough.",
+    "Bake for 35 minutes, or until the top is golden brown and the caramel coating begins to bubble around the edges of the pan.",
+    "Remove the monkey bread from the oven and let it cool in the pan set on a wire rack for about 10 minutes. Loosen the sides with a spatula or butter knife. Flip a large round plate or platter upside down over the pan. Then, carefully flip the pan. You may have pieces of dough stuck to the pan. That’s okay! Simply remove them and tuck them back into the monkey bread. Serve warm.",
+    "Monkey bread is best served warm on the day it is baked. Any leftovers can be stored airtight at room temperature for 1 day, or in the refrigerator for up to 4 days. Reheat the monkey bread in a 300°F oven until warm to the touch, or heat individual servings in the microwave."
+  ],
+  "image": ""
+},{
+  "_id": {
+    "$oid": "63e29b5af5cbbf8fe39fe5e1"
+  },
+  "title": "Roasted Red Pepper, Chive, and Chèvre Egg Bites",
+  "prep_time": "10 minutes",
+  "cook_time": "20 minutes",
+  "total_time": "30 minutes",
+  "servings": "6 servings",
+  "ingredients": [
+    "1 tablespoon butter",
+    "9 large eggs",
+    "1/4 cup half-and-half",
+    "1 teaspoon kosher salt, divided",
+    "3/4 cup finely chopped jarred roasted red peppers",
+    "2 tablespoons plus 1 teaspoon minced fresh chives",
+    "3 ounces chèvre",
+    "Ground black pepper, to taste"
+  ],
+  "directions": [
+    "Preheat the oven to 325°F",
+    "Microwave the butter in a small microwave-safe bowl until just melted, 15 to 20 seconds.",
+    "Using a silicone or pastry brush, brush each well in a 12-well muffin or cupcake tin generously with the melted butter.",
+    "Add the eggs, half and half, and 3/4 teaspoon salt into a blender. Blend on high until fully combined and frothy, 20 to 25 seconds.",
+    "In a medium bowl, combine the roasted red peppers and chives. Season with 1/4 teaspoon salt.",
+    "Divide the red pepper mixture among the 12 buttered wells of your muffin tin. Crumble about 1 teaspoon of chèvre into each well, then carefully fill each well 3/4 full with the egg mixture.",
+    "Use a butter knife to swirl and combine the ingredients in each well. Finish with ground black pepper on the top of each egg bite, to taste.",
+    "Place the muffin tin into your preheated oven and bake for 18 to 20 minutes, or until gently puffed and completely set, being sure to turn the muffin pan halfway through baking. You can test for doneness by gently poking the centers of the egg bites—perfectly cooked egg bites will feel soft but bouncy.",
+    "When cooked, remove the egg bites from the oven. Immediately run a butter knife around the edge of each well to release any stuck-on bits. Let the egg bites cool for at least 5 minutes, then carefully remove to a plate. Serve hot or allow to cool to room temperature and store."
+  ],
+  "image": ""
+},{
+  "_id": {
+    "$oid": "63e2bbd495fe82239b53b119"
+  },
+  "title": "Grilled Pork Chops",
+  "prep_time": "48 minutes",
+  "cook_time": "28 minutes",
+  "total_time": "2 hours 16 minutes",
+  "servings": "4",
+  "ingredients": [
+    "4.5 cups of pork chop brine",
+    "4 bone-in pork rib chops about 2 inches thick",
+    "1.5 tsp Morton's kosher salt",
+    "1 tsp ground cumin",
+    "1/2 tsp ground black pepper",
+    "1/4 tsp sweet paprika",
+    "pinch of cayenne pepper",
+    "1 tbs vegetable oil"
+  ],
+  "directions": [
+    "In a large pot or bowl, add the cooled brine and the pork chops, making sure all of them are fully submerged in the brine. You can place a heavy plate on top to help them stay submerged. Cover and refrigerate for 1 hour.",
+    "Remove the pork chops from the brine. Rinse them under cold running water, then pat them dry with paper towels. Lay the pork chops on a platter so that they come to room temperature while the grill heats.",
+    "Heat grill to 400 degrees F",
+    "In a small bowl, combine the salt, cumin, black pepper, paprika, and cayenne pepper. Rub both sides of the pork chops with the oil. Sprinkle and massage the spice rub all over them.",
+    "Once the grill reaches 400 degrees F, place the pork chops on the hot side of the grill and press down firmly with a grill spatula.Sear for 4 minutes without moving them. Flip them over and repeat.",
+    "Move the seared prok chops to the cool side of the grill, then close the lid. Cook for 15 - 20 minutes, or until meat thermometer inserted in the center of the pork chop reads 145 degrees F.",
+    "Allow pork chops to rest for 5 minutes for serving."
+  ],
+  "image": ""
+}]
