@@ -7,6 +7,9 @@ body {
       padding: 20px;
   
       .card {
+        box-shadow: -200px 2px 0px 200px rgba(0,0,0,0.39);
+        -webkit-box-shadow: -400px 2px 0px 600px rgba(0,0,0,0.39);
+        -moz-box-shadow: -200px 2px 0px 200px rgba(0,0,0,0.39); 
         margin-top: 28px;
         background-color: rgba(56,58,71,255);
         width: 500px;

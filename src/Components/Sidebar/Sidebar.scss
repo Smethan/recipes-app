@@ -2,6 +2,7 @@
 
 /* Position and sizing of burger button */
 .bm-burger-button {
+	margin-top: 20px;
 	position: fixed;
 	width: 36px;
 	height: 30px;
@@ -44,6 +45,9 @@
 	background: #373a47;
 	padding: 2.5em 1.5em 0;
 	font-size: 1.15em;
+	box-shadow: -200px 2px 0px 200px rgba(0,0,0,0.39);
+        -webkit-box-shadow: -400px 2px 0px 1600px rgba(0,0,0,0.4);
+       
 }
 
 /* Morph shape necessary with bubble or elastic */
