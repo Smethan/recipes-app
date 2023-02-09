@@ -1,0 +1,40 @@
+
+body {
+    padding: 20px;
+    
+    #app {
+      border-radius: 4px;
+      padding: 20px;
+  
+      .card {
+        margin-top: 28px;
+        background-color: rgba(56,58,71,255);
+        width: 500px;
+        height: 500px;
+        overflow: auto;
+      }
+  
+      #circle-avatar {
+        margin-top: 80px;
+        margin-left: 200px;
+        display: grid;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: rgba(255,189,47,255);
+        place-items: center;
+  
+        span {
+          font-size: 48px;
+          font-weight: bold;
+          color: white;
+        }
+      }
+      p, 
+      h5 {
+        color: white;
+        text-align: center;
+    }
+    }
+  }
+  

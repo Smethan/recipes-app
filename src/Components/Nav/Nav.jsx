@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import userIcon from "../../Images/user-icon.png";
 import Sidebar from "../Sidebar/Sidebar";
-// import Profile
+import ProfileButton from "../ProfileButton/ProfileButton.jsx";
 import "./Nav.scss"
 
 const Nav = () => {
@@ -13,8 +13,7 @@ const Nav = () => {
       <h4 className="small-link">About</h4>
       <h2>_nology Recipes</h2>
       <h4 className="small-link">All Recipes</h4>
-      {/* Bottom line will be replaced with <Profile /> */}
-      <img src={userIcon} className="profile" alt="user profile icon" width="50" height="50"   />
+      <ProfileButton />
     </div>
     </div>
   )
