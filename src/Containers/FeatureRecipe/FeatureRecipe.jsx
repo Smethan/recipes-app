@@ -29,8 +29,6 @@ const FeatureRecipe = () => {
   )
 }
 
-export default FeatureRecipe
-
 export default FeatureRecipe;
 
 //Create another container for Popular Recipes and pass beercard into them
