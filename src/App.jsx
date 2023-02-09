@@ -5,6 +5,7 @@ import UserProfile from "./Containers/UserProfile/UserProfile";
 import Nav from "./Components/Nav/Nav";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Sidebar from "./Components/Sidebar/Sidebar";
+import NavBottom from "./Components/Nav/NavBottom";
 const App = () => {
 	return (
 		<Router>
@@ -25,6 +26,7 @@ const App = () => {
 						<Route element={<UserProfile />} path="/profile" />
 					</Routes>
 				</div>
+				<NavBottom />
 			</div>
 		</Router>
 	);
