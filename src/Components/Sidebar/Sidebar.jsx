@@ -3,6 +3,7 @@ import "./Sidebar.scss";
 
 const Sidebar = (props) => {
 	return (
+		
 		<Menu>
 			<a className="menu-item" href="/">
 				Home
