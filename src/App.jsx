@@ -1,32 +1,33 @@
 // import MainPage from './Containers/MainPage/MainPage.jsx';
-import FeatureRecipe from './Containers/FeatureRecipe/FeatureRecipe';
-import PopularRecipes from './Containers/PopularRecipes/PopularRecipes';
-import Nav from "./Components/Nav/Nav"
-import InfoBar from './Components/InfoBar/InfoBar';
-import NavBottom from './Components/Nav/NavBottom';
-import { BrowserRouter as Router, Route, Swithc } from 'react-router-dom';
+import FeatureRecipe from "./Containers/FeatureRecipe/FeatureRecipe";
+import PopularRecipes from "./Containers/PopularRecipes/PopularRecipes";
+import UserProfile from "./Containers/UserProfile/UserProfile";
+import Nav from "./Components/Nav/Nav";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Sidebar from "./Components/Sidebar/Sidebar";
 const App = () => {
-  return (
-  
-  <Router>
-    <>
-      <Nav/>
-      <section>
-        <FeatureRecipe/>
-      </section>
-      <section>
-        <InfoBar />
-      </section>
-    <main>
-      <section>
-        <PopularRecipes/>
-      </section>
-      <NavBottom />
-    </main>
-    
-    </>
-  </Router>
-    )
-}
+	return (
+		<Router>
+			<div className="App">
+				<Nav />
+				<div className="body">
+					<Routes>
+						<Route
+							element={
+								<section>
+									<FeatureRecipe />
+									<PopularRecipes />
+								</section>
+							}
+							exact
+							path="/"
+						/>
+						<Route element={<UserProfile />} path="/profile" />
+					</Routes>
+				</div>
+			</div>
+		</Router>
+	);
+};
 
 export default App;

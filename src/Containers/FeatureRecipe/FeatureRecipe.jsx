@@ -1,19 +1,19 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from "react";
 import RecipeCard from "../../Components/RecipeCard/RecipeCard.jsx";
 import "./FeatureRecipe.scss"
 
 const FeatureRecipe = () => {
-  const [featured, setFeatured] = useState("")
-  
-  const getFeaturedRecipe = () => {
-    fetch('https://api.punkapi.com/v2/beers/random')
-    .then((res) => {
-      return res.json()
-    })
-    .then((data) => {
-      setFeatured(data)
-    })
-  }
+	const [featured, setFeatured] = useState("");
+
+	const getFeaturedRecipe = () => {
+		fetch("localhost:3010/api/recipes")
+			.then((res) => {
+				return res.json();
+			})
+			.then((data) => {
+				setFeatured(data);
+			});
+	};
 
   useEffect(getFeaturedRecipe, [])
   return (
@@ -31,5 +31,6 @@ const FeatureRecipe = () => {
 
 export default FeatureRecipe
 
+export default FeatureRecipe;
 
 //Create another container for Popular Recipes and pass beercard into them

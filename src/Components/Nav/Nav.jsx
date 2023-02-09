@@ -1,6 +1,8 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 import menuIcon from "../../Images/menu-icon.png";
 import userIcon from "../../Images/user-icon.png";
+import Sidebar from "../Sidebar/Sidebar";
 import "./Nav.scss"
 
 const Nav = () => {
@@ -16,5 +18,3 @@ const Nav = () => {
     </div>
   )
 }
-
-export default Nav

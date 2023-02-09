@@ -7,7 +7,7 @@ const PopularRecipes = () => {
   const [popular, setPopular] = useState("")
   
   const getPopularRecipes = () => {
-    fetch("https://api.punkapi.com/v2/beers?page=2&per_page=5")
+    fetch("localhost:3010/api/students")
     .then((res) => {
       return res.json()
     })
