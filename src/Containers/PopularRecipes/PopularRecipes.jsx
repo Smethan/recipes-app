@@ -5,7 +5,7 @@ const PopularRecipes = () => {
   const [popular, setPopular] = useState("")
   
   const getPopularRecipes = () => {
-    fetch("localhost:3010/api/students")
+    fetch("http://127.0.0.1:3010/api/recipes")
     .then((res) => {
       return res.json()
     })

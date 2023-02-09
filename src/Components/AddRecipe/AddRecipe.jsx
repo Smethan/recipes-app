@@ -18,6 +18,13 @@ const AddRecipe = () => {
   const handleServings = ((e) => {
     setServings(e.target.value)
   })
+  const handleIngredients = ((e) => {
+    setIngredients(e.target.value)
+  })
+  
+  const handleFile = ((e) => {
+    console.log(e.target)
+  })
 
   const addRecipe = {};
 
@@ -31,23 +38,34 @@ const AddRecipe = () => {
       body: JSON.stringify(addRecipe)
     })
   }
+
+  const getRecipe = (e) => {
+    addRecipe.title = e.current.target
+    addRecipe.prep_time = e.current.target
+  }
   return (
     <div>
       <h2>Add a New Recipe</h2>
       <form >
         <label> Recipe Title</label>
         <input type="text" required value={title} onChange={handleTitle} />
-        
+        <br />
         <label> Prep-Time</label>
         <input type="text" required value={prepTime} onChange={handlePrepTime} />
-        
+        <br />
         <label> Cook Time </label>
         <input type="text" required value={cookTime} onChange={handleCookTime} />
-        
+        <br />
         <label> Servings </label>
         <input type="text" required value={servings} onChange={handleServings} />
+        <br />
+        <label>Ingredients</label>
+        <input type="text" required value={ingredients} onChange={handleIngredients} />
+        <br />
+        <input type="file" onChange={handleFile} />
+        <button>Upload Image</button>
       </form>
-      <p> {title}  {prepTime}  {cookTime}  {servings} </p>
+      
     </div>
   )
 }

@@ -5,7 +5,7 @@ const FeatureRecipe = () => {
   const [featured, setFeatured] = useState("")
   
   const getFeaturedRecipe = () => {
-    fetch('localhost:3010/api/recipes')
+    fetch('http://127.0.0.1:3010/api/recipes')
     .then((res) => {
       return res.json()
     })
