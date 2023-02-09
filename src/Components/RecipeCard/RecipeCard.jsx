@@ -1,4 +1,5 @@
 import React from "react";
+import "./RecipeCard.scss"
 
 const RecipeCard = (props) => {
 	const { title, prep_time, cook_time, servings, ingredients, directions } = props.recipes;

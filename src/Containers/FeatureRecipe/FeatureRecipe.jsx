@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import RecipeCard from "../../Components/RecipeCard/RecipeCard.jsx";
+import "./FeatureRecipe.scss"
 
 const FeatureRecipe = () => {
 	const [featured, setFeatured] = useState("");
@@ -14,17 +15,19 @@ const FeatureRecipe = () => {
 			});
 	};
 
-	useEffect(getFeaturedRecipe, []);
-	return (
-		<div>
-			<h1>Recipe of the Month</h1>
-			{featured &&
-				featured.map((recipes) => {
-					return <RecipeCard recipes={recipes} />;
-				})}
-		</div>
-	);
-};
+  useEffect(getFeaturedRecipe, [])
+  return (
+    <div className="recipe-card-container">
+      <div className="card">
+      <h1>Recipe of the Month</h1>
+      {featured && featured.map((recipes) => {
+        return <RecipeCard recipes= {recipes} />
+      })}
+      <button>GET THE RECIPE</button>
+    </div>
+    </div>
+  )
+}
 
 export default FeatureRecipe;
 

@@ -1,0 +1,37 @@
+@use "../../assets/variables" as *;
+
+.navbar-container {
+  .navbar {
+    font-family: $font-family;
+    border-bottom: 2px solid $darker-blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10;
+    padding-bottom: 20px;
+  }
+
+  .ham {
+    margin-left: 25px;
+    cursor: grab;
+  }
+
+  .profile {
+    margin-right: 25px;
+    cursor: grab;
+  }
+}
+
+.small-link:hover {
+  filter: brightness(100%);
+}
+
+@media screen and (min-width: 992px) {
+  .nav {
+    grid-column: 1 / -1;
+  }
+}
