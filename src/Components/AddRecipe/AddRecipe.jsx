@@ -21,7 +21,13 @@ const AddRecipe = () => {
 		setServings(e.target.value);
 	};
 
+	const handleIngredients = (e) => {
+		e.preventDefault();
+		setIngredients([...ingredients, {}]);
+	};
+
 	const handleArrays = (e, i) => {
+		e.preventDefault();
 		const { name, value } = e.target;
 		switch (name) {
 			case "ingredient":
@@ -47,13 +53,16 @@ const AddRecipe = () => {
 
 	const addRecipe = {
 		title: title,
-		prepTime: prepTime,
-		cookTime: cookTime,
+		prep_time: prepTime,
+		cook_time: cookTime,
 		servings: servings,
+		ingredients: ingredients,
+		directions: directions,
 		image: "",
 	};
 
 	const postRecipe = () => {
+		console.log(addRecipe);
 		fetch("http://127.0.0.1:3010/api/recipes", {
 			headers: {
 				Accept: "application/json",
@@ -101,11 +110,7 @@ const AddRecipe = () => {
 						);
 					})}
 					<li>
-						<button
-							onClick={() => {
-								setIngredients([...ingredients, {}]);
-							}}
-						>
+						<button type="button" onClick={handleIngredients}>
 							Add Ingredient
 						</button>
 					</li>
@@ -129,6 +134,7 @@ const AddRecipe = () => {
 					})}
 					<li>
 						<button
+							type="button"
 							onClick={() => {
 								setDirections([...directions, {}]);
 							}}
@@ -141,6 +147,7 @@ const AddRecipe = () => {
         <button onClick={handleSubmit}> Add Recipe </button>
 			</form>
 		<p>{title}, {prepTime}, {cookTime}, {servings}</p>
+			<button onClick={postRecipe}>poost</button>
 		</div>
 	);
 };

@@ -1,0 +1,89 @@
+{
+  "_id": {
+    "$oid": "63e29b5af5cbbf8fe39fe5e0"
+  },
+  "title": "Monkey Bread",
+  "prep_time": "15 minutes",
+  "cook_time": "35 minutes",
+  "total_time": "50 minutes",
+  "servings": "12 servings",
+  "ingredients": [
+    "1/2 cup (100g) granulated sugar",
+    "2 teaspoons ground cinnamon",
+    "2 (16.3-ounce) cans buttermilk biscuit dough (not flaky)",
+    "3/4 cup (170g) unsalted butter, plus more for Bundt pan",
+    "3/4 cup (160g) packed light brown sugar",
+    "1 teaspoon vanilla extract"
+  ],
+  "directions": [
+    "Grease a 12-cup Bundt pan liberally with butter or nonstick baking spray. Set it aside.",
+    "In a large bowl, whisk together the granulated sugar and cinnamon.",
+    "Separate the biscuit dough and cut each biscuit into 6 evenly sized pieces.",
+    "Add the biscuit pieces to the bowl of cinnamon sugar, and use your hands to toss and evenly coat each piece with the cinnamon sugar. Transfer the coated dough and any extra cinnamon sugar into the prepared Bundt pan, and distribute them evenly in the pan.",
+    "In a small saucepan over medium heat, melt the butter and brown sugar. Cook for a few minutes, stirring, until smooth and fully combined. Take the butter mixture off the heat and stir in the vanilla extract. Evenly pour the butter mixture over the dough.",
+    "Bake for 35 minutes, or until the top is golden brown and the caramel coating begins to bubble around the edges of the pan.",
+    "Remove the monkey bread from the oven and let it cool in the pan set on a wire rack for about 10 minutes. Loosen the sides with a spatula or butter knife. Flip a large round plate or platter upside down over the pan. Then, carefully flip the pan. You may have pieces of dough stuck to the pan. That’s okay! Simply remove them and tuck them back into the monkey bread. Serve warm.",
+    "Monkey bread is best served warm on the day it is baked. Any leftovers can be stored airtight at room temperature for 1 day, or in the refrigerator for up to 4 days. Reheat the monkey bread in a 300°F oven until warm to the touch, or heat individual servings in the microwave."
+  ],
+  "image": ""
+},{
+  "_id": {
+    "$oid": "63e29b5af5cbbf8fe39fe5e1"
+  },
+  "title": "Roasted Red Pepper, Chive, and Chèvre Egg Bites",
+  "prep_time": "10 minutes",
+  "cook_time": "20 minutes",
+  "total_time": "30 minutes",
+  "servings": "6 servings",
+  "ingredients": [
+    "1 tablespoon butter",
+    "9 large eggs",
+    "1/4 cup half-and-half",
+    "1 teaspoon kosher salt, divided",
+    "3/4 cup finely chopped jarred roasted red peppers",
+    "2 tablespoons plus 1 teaspoon minced fresh chives",
+    "3 ounces chèvre",
+    "Ground black pepper, to taste"
+  ],
+  "directions": [
+    "Preheat the oven to 325°F",
+    "Microwave the butter in a small microwave-safe bowl until just melted, 15 to 20 seconds.",
+    "Using a silicone or pastry brush, brush each well in a 12-well muffin or cupcake tin generously with the melted butter.",
+    "Add the eggs, half and half, and 3/4 teaspoon salt into a blender. Blend on high until fully combined and frothy, 20 to 25 seconds.",
+    "In a medium bowl, combine the roasted red peppers and chives. Season with 1/4 teaspoon salt.",
+    "Divide the red pepper mixture among the 12 buttered wells of your muffin tin. Crumble about 1 teaspoon of chèvre into each well, then carefully fill each well 3/4 full with the egg mixture.",
+    "Use a butter knife to swirl and combine the ingredients in each well. Finish with ground black pepper on the top of each egg bite, to taste.",
+    "Place the muffin tin into your preheated oven and bake for 18 to 20 minutes, or until gently puffed and completely set, being sure to turn the muffin pan halfway through baking. You can test for doneness by gently poking the centers of the egg bites—perfectly cooked egg bites will feel soft but bouncy.",
+    "When cooked, remove the egg bites from the oven. Immediately run a butter knife around the edge of each well to release any stuck-on bits. Let the egg bites cool for at least 5 minutes, then carefully remove to a plate. Serve hot or allow to cool to room temperature and store."
+  ],
+  "image": ""
+},{
+  "_id": {
+    "$oid": "63e2bbd495fe82239b53b119"
+  },
+  "title": "Grilled Pork Chops",
+  "prep_time": "48 minutes",
+  "cook_time": "28 minutes",
+  "total_time": "2 hours 16 minutes",
+  "servings": "4",
+  "ingredients": [
+    "4.5 cups of pork chop brine",
+    "4 bone-in pork rib chops about 2 inches thick",
+    "1.5 tsp Morton's kosher salt",
+    "1 tsp ground cumin",
+    "1/2 tsp ground black pepper",
+    "1/4 tsp sweet paprika",
+    "pinch of cayenne pepper",
+    "1 tbs vegetable oil"
+  ],
+  "directions": [
+    "In a large pot or bowl, add the cooled brine and the pork chops, making sure all of them are fully submerged in the brine. You can place a heavy plate on top to help them stay submerged. Cover and refrigerate for 1 hour.",
+    "Remove the pork chops from the brine. Rinse them under cold running water, then pat them dry with paper towels. Lay the pork chops on a platter so that they come to room temperature while the grill heats.",
+    "Heat grill to 400 degrees F",
+    "In a small bowl, combine the salt, cumin, black pepper, paprika, and cayenne pepper. Rub both sides of the pork chops with the oil. Sprinkle and massage the spice rub all over them.",
+    "Once the grill reaches 400 degrees F, place the pork chops on the hot side of the grill and press down firmly with a grill spatula.Sear for 4 minutes without moving them. Flip them over and repeat.",
+    "Move the seared prok chops to the cool side of the grill, then close the lid. Cook for 15 - 20 minutes, or until meat thermometer inserted in the center of the pork chop reads 145 degrees F.",
+    "Allow pork chops to rest for 5 minutes for serving."
+  ],
+  "image": ""
+}]

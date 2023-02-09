@@ -7,8 +7,8 @@ const RecipeSchema = new Schema({
 	prep_time: String,
 	cook_time: String,
 	servings: Number,
-	ingredients: [{name: String}],
-	directions: [{contentString}],
+	ingredients: [{name: { name: String} }],
+	directions: [{content{ content: String} }],
 });
 
 const Recipe = mongoose.model("recipe", RecipeSchema);

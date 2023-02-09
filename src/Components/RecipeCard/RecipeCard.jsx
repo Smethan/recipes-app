@@ -3,6 +3,7 @@ import "./RecipeCard.scss";
 
 const RecipeCard = (props) => {
 	const { title, prep_time, cook_time, servings, ingredients, directions, image } = props.recipes;
+	console.log(props.recipes);
 	return (
 		<div className="RecipeCard">
 			<h1> {title} </h1>
@@ -14,13 +15,13 @@ const RecipeCard = (props) => {
 			<h2>Ingredients</h2>
 			<ul>
 				{ingredients.map((ingredient) => {
-					return <li>{ingredient}</li>;
+					return <li>{ingredient.name}</li>;
 				})}
 			</ul>
 			<h2>Directions</h2>
 			<ol>
 				{directions.map((direction) => {
-					return <li> {direction} </li>;
+					return <li> {direction.content} </li>;
 				})}
 			</ol>
 		</div>
