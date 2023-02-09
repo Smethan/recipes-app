@@ -63,22 +63,26 @@ const AddRecipe = () => {
 			body: JSON.stringify(addRecipe),
 		});
 	};
+
+    const handleSubmit = (e) => {
+       postRecipe()
+    };
 	return (
 		<div>
 			<h2>Add a New Recipe</h2>
-			<form>
+			<form >
 				<label> Recipe Title</label>
 				<input type="text" required value={title} onChange={handleTitle} />
-
+        
 				<label> Prep-Time</label>
 				<input type="text" required value={prepTime} onChange={handlePrepTime} />
-
+        
 				<label> Cook Time </label>
 				<input type="text" required value={cookTime} onChange={handleCookTime} />
-
+        
 				<label> Servings </label>
 				<input type="text" required value={servings} onChange={handleServings} />
-
+        
 				<ul style={{ listStyle: "none" }}>
 					{ingredients.map((ingredient, i) => {
 						const index = i;
@@ -133,11 +137,10 @@ const AddRecipe = () => {
 						</button>
 					</li>
 				</ul>
+        <input type="file" />
+        <button onClick={handleSubmit}> Add Recipe </button>
 			</form>
-			<p>
-				{" "}
-				{title} {prepTime} {cookTime} {servings}{" "}
-			</p>
+		<p>{title}, {prepTime}, {cookTime}, {servings}</p>
 		</div>
 	);
 };
