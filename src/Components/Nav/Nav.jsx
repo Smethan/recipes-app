@@ -9,7 +9,6 @@ const Nav = () => {
   return (
     <div className="navbar-container">
       <div className="navbar">
-      <img src={menuIcon} className="ham" alt="menu icon" width="40" height="40"  />
       <Sidebar />
       <h4 className="small-link">About</h4>
       <h2>_nology Recipes</h2>
