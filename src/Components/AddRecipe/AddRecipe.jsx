@@ -1,80 +1,145 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 const AddRecipe = () => {
-  const [ title, setTitle ] = useState("")
-  const [ prepTime, setPrepTime ] = useState("")
-  const [ cookTime, setCookTime ] = useState("")
-  const [ servings, setServings ] = useState("")
+	const [title, setTitle] = useState("");
+	const [prepTime, setPrepTime] = useState("");
+	const [cookTime, setCookTime] = useState("");
+	const [servings, setServings] = useState("");
+	const [ingredients, setIngredients] = useState([{}]);
+	const [directions, setDirections] = useState([{}]);
 
-  const handleTitle = ((e) => {
-    setTitle(e.target.value)
-  })
-  const handlePrepTime = ((e) => {
-    setPrepTime(e.target.value)
-  })
-  const handleCookTime = ((e) => {
-    setCookTime(e.target.value)
-  })
-  const handleServings = ((e) => {
-    setServings(e.target.value)
-  })
-  // const handleIngredients = ((e) => {
-    // setIngredients(e.target.value)
-  // })
-  
-  const handleFile = ((e) => {
-    console.log(e.target)
-  })
+	const handleTitle = (e) => {
+		setTitle(e.target.value);
+	};
+	const handlePrepTime = (e) => {
+		setPrepTime(e.target.value);
+	};
+	const handleCookTime = (e) => {
+		setCookTime(e.target.value);
+	};
+	const handleServings = (e) => {
+		setServings(e.target.value);
+	};
 
-  const addRecipe = {
-    title: title,
+	const handleArrays = (e, i) => {
+		const { name, value } = e.target;
+		switch (name) {
+			case "ingredient":
+				setIngredients((PrevState) => {
+					let temp = PrevState;
+					temp[i].name = value;
+					return temp;
+				});
+				break;
+			case "direction":
+				setDirections((PrevState) => {
+					let temp = PrevState;
+					temp[i].content = value;
+
+					return temp;
+				});
+				break;
+
+			default:
+				break;
+		}
+	};
+
+	const addRecipe = {
+		title: title,
 		prepTime: prepTime,
 		cookTime: cookTime,
 		servings: servings,
 		image: "",
-  };
+	};
 
-  const postRecipe =() => {
-    fetch("http://127.0.0.1:3010/api/recipes", {
-      headers: {
-        'Accept': 'application/json',
-        'content-type': 'application/json'
-      },
-      method: "POST",
-      body: JSON.stringify(addRecipe)
-    })
-  }
+	const postRecipe = () => {
+		fetch("http://127.0.0.1:3010/api/recipes", {
+			headers: {
+				Accept: "application/json",
+				"content-type": "application/json",
+			},
+			method: "POST",
+			body: JSON.stringify(addRecipe),
+		});
+	};
+	return (
+		<div>
+			<h2>Add a New Recipe</h2>
+			<form>
+				<label> Recipe Title</label>
+				<input type="text" required value={title} onChange={handleTitle} />
 
-  const handleAddRecipe = (e) => {
-    e.preventDefault()
-    postRecipe()
-  }
-  return (
-    <div>
-      <h2>Add a New Recipe</h2>
-      <form onSubmit={handleAddRecipe}>
-        <label> Recipe Title</label>
-        <input type="text" required value={title} onChange={handleTitle} />
-        <br />
-        <label> Prep-Time</label>
-        <input type="text" required value={prepTime} onChange={handlePrepTime} />
-        <br />
-        <label> Cook Time </label>
-        <input type="text" required value={cookTime} onChange={handleCookTime} />
-        <br />
-        <label> Servings </label>
-        <input type="text" required value={servings} onChange={handleServings} />
-        <br />
-        <label>Ingredients</label>
-        {/* <input type="text" required value={ingredients} onChange={handleIngredients} /> */}
-        <br />
-        <input type="file"  onChange={handleFile} />
-        <br />
-        <button>Add Recipe</button>
-      </form>
-      
-    </div>
-  )
-}
+				<label> Prep-Time</label>
+				<input type="text" required value={prepTime} onChange={handlePrepTime} />
 
-export default AddRecipe
+				<label> Cook Time </label>
+				<input type="text" required value={cookTime} onChange={handleCookTime} />
+
+				<label> Servings </label>
+				<input type="text" required value={servings} onChange={handleServings} />
+
+				<ul style={{ listStyle: "none" }}>
+					{ingredients.map((ingredient, i) => {
+						const index = i;
+						return (
+							<li>
+								<input
+									type="text"
+									name="ingredient"
+									value={ingredient.name}
+									placeholder="Enter ingredient name"
+									onChange={(e) => {
+										handleArrays(e, i);
+									}}
+								/>
+							</li>
+						);
+					})}
+					<li>
+						<button
+							onClick={() => {
+								setIngredients([...ingredients, {}]);
+							}}
+						>
+							Add Ingredient
+						</button>
+					</li>
+				</ul>
+				<ul style={{ listStyle: "none" }}>
+					{directions.map((direction, i) => {
+						const index = i;
+						return (
+							<li>
+								<input
+									type="text"
+									name="direction"
+									value={direction.content}
+									placeholder="Enter direction name"
+									onChange={(e) => {
+										handleArrays(e, i);
+									}}
+								/>
+							</li>
+						);
+					})}
+					<li>
+						<button
+							onClick={() => {
+								setDirections([...directions, {}]);
+							}}
+						>
+							Add Direction
+						</button>
+					</li>
+				</ul>
+			</form>
+			<p>
+				{" "}
+				{title} {prepTime} {cookTime} {servings}{" "}
+			</p>
+		</div>
+	);
+};
+
+export default AddRecipe;

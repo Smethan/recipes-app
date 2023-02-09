@@ -1,0 +1,25 @@
+@use "../../assets/variables" as *;
+
+
+.main {
+    font-family: $font-family;
+    background-color: $card-background;
+    margin: 40px;
+}
+
+
+h1 {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-family: $font-family;
+    background-color: $card-background;
+}
+
+.grid-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2px;
+    background-color: $card-background;
+}
