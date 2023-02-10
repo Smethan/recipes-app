@@ -1,0 +1,83 @@
+@use "../../assets//variables" as *;
+
+#about-pic {
+    max-width: 500px;
+    margin-left: 480px;
+}
+
+#about-title {
+    margin-left: 420px;
+    font-weight: bold;
+    font-size: 35px;
+    color: $lighter-blue;
+    font-family: $font-family;
+}
+
+.name {
+    font-size: 50px;
+    font-family: $font-family;
+    padding-top: 50px;
+    margin-left: 480px;
+    margin-bottom: 10px;
+   
+}
+
+.name-info {
+    font-size: 23px;
+    font-family: $font-family;
+    overflow-wrap: break-word;
+    max-width: 600px;
+    margin-left: 230px;
+   
+}
+.info-container {
+    border: 2px solid white;
+    margin: 20px;
+    padding-bottom: 10px;
+}
+
+.ethan-container {
+    background-color: $soft-green;
+    box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 5px 5px 0px $soft-green;
+    -moz-box-shadow: 2px 5px 5px 0px $soft-green;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.ethan-pic {
+    max-width: 300px;
+    margin-bottom: 50px;
+    margin-left: 400px;
+    box-shadow: 8px 10px 4px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 8px 10px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 10px 4px 0px rgba(0,0,0,0.75);;
+}
+
+.taylor-container {
+    background-color: $soft-green;
+    margin: 10px;
+}
+
+.taylor-pic {
+    max-width: 300px;
+    margin-left: 100px;
+    box-shadow: -8px 10px 4px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -8px 10px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 10px 4px 0px rgba(0,0,0,0.75);
+    margin-top: 40px;
+}
+
+.aaron-container {
+    background-color: $soft-green;
+    margin: 20px;
+}
+
+.aaron-pic {
+    max-width: 300px;
+    margin-left: 900px;
+    box-shadow: 8px 10px 4px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 8px 10px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 10px 4px 0px rgba(0,0,0,0.75);
+    margin-top: 40px;
+}

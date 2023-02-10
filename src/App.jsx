@@ -9,7 +9,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Sidebar from "./Components/Sidebar/Sidebar";
 import NavBottom from "./Components/Nav/NavBottom";
 import InfoBar from "./Components/InfoBar/InfoBar.jsx";
-import AllRecipes from "./Containers/AllRecipes/AllRecipes.jsx";
 import { useState } from "react";
 
 
