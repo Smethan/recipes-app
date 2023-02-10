@@ -8,8 +8,8 @@ import Nav from "./Components/Nav/Nav";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Sidebar from "./Components/Sidebar/Sidebar";
 import NavBottom from "./Components/Nav/NavBottom";
-import InfoBar from "./Components/InfoBar/InfoBar.jsx"
-import Welcome from "./Components/Welcome/Welcome.jsx";
+import InfoBar from "./Components/InfoBar/InfoBar.jsx";
+import AllRecipes from "./Containers/AllRecipes/AllRecipes.jsx";
 import { useState } from "react";
 
 

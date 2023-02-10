@@ -1,0 +1,12 @@
+@use "../../assets//variables" as *;
+
+.search-box {
+   text-align: center;
+   font-family: $font-family;
+   padding-top: 10px;
+   font-weight: bold;
+}
+
+input {
+    width: 250px;
+}

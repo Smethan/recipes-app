@@ -1,9 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { HashLink as Hash } from "react-router-hash-link";
 import menuIcon from "../../Images/menu-icon.png";
 import { useState } from "react";
-
 import userIcon from "../../Images/user-icon.png";
 import Sidebar from "../Sidebar/Sidebar";
 import ProfileButton from "../ProfileButton/ProfileButton.jsx";
@@ -24,7 +22,7 @@ const Nav = (props) => {
       <Sidebar />
       <h4 className="small-link"> <Link to="/about">About</Link></h4>
       <h2>_nology Recipes</h2>
-      <h4 className="small-link"> <Link to="/all-recipes">All Recipes</Link></h4>
+      <h4 className="small-link"><Link to="/all-recipes">All Recipes</Link></h4>
 
       {showLogin && (
       <ProfileButton 

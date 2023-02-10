@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./AddRecipe.scss";
 
 const AddRecipe = () => {
 	const [title, setTitle] = useState("");
@@ -63,7 +64,7 @@ const AddRecipe = () => {
 
 	const postRecipe = () => {
 		console.log(addRecipe);
-		fetch("http://127.0.0.1:3010/api/recipes", {
+		fetch(`http://${process.env.API_IP}:3010/api/recipes`, {
 			headers: {
 				Accept: "application/json",
 				"content-type": "application/json",
@@ -73,81 +74,88 @@ const AddRecipe = () => {
 		});
 	};
 
-    const handleSubmit = (e) => {
-       postRecipe()
-    };
+	const handleSubmit = (e) => {
+		postRecipe();
+	};
+
 	return (
-		<div>
-			<h2>Add a New Recipe</h2>
-			<form >
+		<div className="form-container">
+			<h2 className="form-title">Add a New Recipe</h2>
+			<form className="form-main">
 				<label> Recipe Title</label>
 				<input type="text" required value={title} onChange={handleTitle} />
-        
+
 				<label> Prep-Time</label>
 				<input type="text" required value={prepTime} onChange={handlePrepTime} />
-        
+
 				<label> Cook Time </label>
 				<input type="text" required value={cookTime} onChange={handleCookTime} />
-        
+
 				<label> Servings </label>
 				<input type="text" required value={servings} onChange={handleServings} />
-        
-				<ul style={{ listStyle: "none" }}>
-					{ingredients.map((ingredient, i) => {
-						const index = i;
-						return (
-							<li>
-								<input
-									type="text"
-									name="ingredient"
-									value={ingredient.name}
-									placeholder="Enter ingredient name"
-									onChange={(e) => {
-										handleArrays(e, i);
-									}}
-								/>
-							</li>
-						);
-					})}
-					<li>
-						<button type="button" onClick={handleIngredients}>
-							Add Ingredient
-						</button>
-					</li>
-				</ul>
-				<ul style={{ listStyle: "none" }}>
-					{directions.map((direction, i) => {
-						const index = i;
-						return (
-							<li>
-								<input
-									type="text"
-									name="direction"
-									value={direction.content}
-									placeholder="Enter direction name"
-									onChange={(e) => {
-										handleArrays(e, i);
-									}}
-								/>
-							</li>
-						);
-					})}
-					<li>
-						<button
-							type="button"
-							onClick={() => {
-								setDirections([...directions, {}]);
-							}}
-						>
-							Add Direction
-						</button>
-					</li>
-				</ul>
-        <input type="file" />
-        <button onClick={handleSubmit}> Add Recipe </button>
+
+				<div className="add-list">
+					<ul style={{ listStyle: "none" }}>
+						{ingredients.map((ingredient, i) => {
+							const index = i;
+							return (
+								<li>
+									<input
+										type="text"
+										name="ingredient"
+										value={ingredient.name}
+										placeholder="Enter ingredient name"
+										onChange={(e) => {
+											handleArrays(e, i);
+										}}
+									/>
+								</li>
+							);
+						})}
+						<li>
+							<button type="button" onClick={handleIngredients}>
+								Add Ingredient
+							</button>
+						</li>
+					</ul>
+					<ul style={{ listStyle: "none" }}>
+						{directions.map((direction, i) => {
+							const index = i;
+							return (
+								<li>
+									<input
+										type="text"
+										name="direction"
+										value={direction.content}
+										placeholder="Enter direction name"
+										onChange={(e) => {
+											handleArrays(e, i);
+										}}
+									/>
+								</li>
+							);
+						})}
+						<li>
+							<button
+								type="button"
+								onClick={() => {
+									setDirections([...directions, {}]);
+								}}
+							>
+								Add Direction
+							</button>
+						</li>
+					</ul>
+					<input type="file" />
+					<button onClick={handleSubmit}> Add Recipe </button>
+				</div>
 			</form>
-		<p>{title}, {prepTime}, {cookTime}, {servings}</p>
-			<button onClick={postRecipe}>poost</button>
+			<p className="final">
+				{title}, {prepTime}, {cookTime}, {servings}
+			</p>
+			<button className="post-button" onClick={postRecipe}>
+				post
+			</button>
 		</div>
 	);
 };
