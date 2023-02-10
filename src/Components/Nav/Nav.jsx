@@ -20,7 +20,7 @@ const Nav = (props) => {
     <div className="navbar-container">
       <div className="navbar">
       <Sidebar />
-      <h4 className="small-link">About</h4>
+      <h4 className="small-link"> <Link to="/about">About</Link></h4>
       <h2>_nology Recipes</h2>
       <h4 className="small-link"><Link to="/all-recipes">All Recipes</Link></h4>
 
