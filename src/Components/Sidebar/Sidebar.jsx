@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const Sidebar = (props) => {
 	return (
+		
 		<Menu>
 			<Link to="/" className="menu-item"> 
 				Home
