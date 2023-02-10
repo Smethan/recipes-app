@@ -21,7 +21,13 @@ const AddRecipe = () => {
 		setServings(e.target.value);
 	};
 
+	const handleIngredients = (e) => {
+		e.preventDefault();
+		setIngredients([...ingredients, {}]);
+	};
+
 	const handleArrays = (e, i) => {
+		e.preventDefault();
 		const { name, value } = e.target;
 		switch (name) {
 			case "ingredient":
@@ -47,13 +53,16 @@ const AddRecipe = () => {
 
 	const addRecipe = {
 		title: title,
-		prepTime: prepTime,
-		cookTime: cookTime,
+		prep_time: prepTime,
+		cook_time: cookTime,
 		servings: servings,
+		ingredients: ingredients,
+		directions: directions,
 		image: "",
 	};
 
 	const postRecipe = () => {
+		console.log(addRecipe);
 		fetch("http://127.0.0.1:3010/api/recipes", {
 			headers: {
 				Accept: "application/json",
@@ -63,22 +72,26 @@ const AddRecipe = () => {
 			body: JSON.stringify(addRecipe),
 		});
 	};
+
+    const handleSubmit = (e) => {
+       postRecipe()
+    };
 	return (
 		<div>
 			<h2>Add a New Recipe</h2>
-			<form>
+			<form >
 				<label> Recipe Title</label>
 				<input type="text" required value={title} onChange={handleTitle} />
-
+        
 				<label> Prep-Time</label>
 				<input type="text" required value={prepTime} onChange={handlePrepTime} />
-
+        
 				<label> Cook Time </label>
 				<input type="text" required value={cookTime} onChange={handleCookTime} />
-
+        
 				<label> Servings </label>
 				<input type="text" required value={servings} onChange={handleServings} />
-
+        
 				<ul style={{ listStyle: "none" }}>
 					{ingredients.map((ingredient, i) => {
 						const index = i;
@@ -97,11 +110,7 @@ const AddRecipe = () => {
 						);
 					})}
 					<li>
-						<button
-							onClick={() => {
-								setIngredients([...ingredients, {}]);
-							}}
-						>
+						<button type="button" onClick={handleIngredients}>
 							Add Ingredient
 						</button>
 					</li>
@@ -125,6 +134,7 @@ const AddRecipe = () => {
 					})}
 					<li>
 						<button
+							type="button"
 							onClick={() => {
 								setDirections([...directions, {}]);
 							}}
@@ -133,11 +143,11 @@ const AddRecipe = () => {
 						</button>
 					</li>
 				</ul>
+        <input type="file" />
+        <button onClick={handleSubmit}> Add Recipe </button>
 			</form>
-			<p>
-				{" "}
-				{title} {prepTime} {cookTime} {servings}{" "}
-			</p>
+		<p>{title}, {prepTime}, {cookTime}, {servings}</p>
+			<button onClick={postRecipe}>poost</button>
 		</div>
 	);
 };

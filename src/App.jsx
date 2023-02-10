@@ -43,6 +43,7 @@ const App = (props) => {
 		}
 	  };
 
+
 	return (
 		<Router>
 			<div className="App">
@@ -64,6 +65,7 @@ const App = (props) => {
 							path="/"
 						/>
 						<Route element={<UserProfile />} path="/profile" />
+						<Route element= {<AllRecipes/>} path="/all-recipes"  />
 					</Routes>
 				</div>
 				<NavBottom />

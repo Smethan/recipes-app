@@ -1,8 +1,14 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import { HashLink as Hash } from "react-router-hash-link";
+import menuIcon from "../../Images/menu-icon.png";
 import { useState } from "react";
+
 import userIcon from "../../Images/user-icon.png";
 import Sidebar from "../Sidebar/Sidebar";
 import ProfileButton from "../ProfileButton/ProfileButton.jsx";
 import "./Nav.scss"
+
 
 const Nav = (props) => {
   const { userName, handleSubmit } = props;
@@ -38,4 +44,5 @@ const Nav = (props) => {
   )
 }
  export default Nav;
+
 

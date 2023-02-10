@@ -1,16 +1,17 @@
 import { slide as Menu } from "react-burger-menu";
 import "./Sidebar.scss";
+import { Link } from "react-router-dom";
 
 const Sidebar = (props) => {
 	return (
 		
 		<Menu>
-			<a className="menu-item" href="/">
+			<Link to="/" className="menu-item"> 
 				Home
-			</a>
-			<a className="menu-item" href="/salads">
+			</Link>
+			<Link to="/profile" className="menu-item">
 				Your Recipes
-			</a>
+			</Link>
 		</Menu>
 	);
 };
