@@ -15,18 +15,18 @@ const About = () => {
   return (
     <>
       <div>
-        <img src="" alt="" />
+        <img src="" alt="picture of ethan" />
         <h2>Ethan</h2>
         <button>About Ethan</button>
       </div>
       <div>
-        <img src="" alt="" />
+        <img src="" alt="picture of taylor" />
         <h2>Taylor</h2>
         <button>About Taylor </button>
       </div>
     
       <div>
-        <img src="" alt="" />
+        <img src="" alt="picture of aaron" />
         <h2>Aaron</h2>
         <button>About Aaron</button>
       </div>
