@@ -2,33 +2,33 @@ import React, { useState } from 'react'
 
 
 const About = () => {
-  const [about, setAbout ] = useState("")
+  const [about, setAbout ] = useState("_nology's best developing chefs")
   const handleEthan = () => {
-    setAbout()
+    setAbout("I am an awesome chef")
   }
   const handleTaylor = () => {
-    setAbout()
+    setAbout("I am an amazing chef")
   }
   const handleAaron = () => {
-    setAbout()
+    setAbout(" I am a cool chef")
   }
   return (
     <>
       <div>
         <img src="" alt="" />
         <h2>Ethan</h2>
-        <button>About Ethan</button>
+        <button onclick={handleEthan}>About Ethan</button>
       </div>
       <div>
         <img src="" alt="" />
         <h2>Taylor</h2>
-        <button>About Taylor </button>
+        <button onClick={handleTaylor}>About Taylor </button>
       </div>
     
       <div>
         <img src="" alt="" />
         <h2>Aaron</h2>
-        <button>About Aaron</button>
+        <button onClick={handleAaron}>About Aaron</button>
       </div>
       <div>
         <h1>About</h1>
