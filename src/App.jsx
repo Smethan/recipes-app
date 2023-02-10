@@ -7,10 +7,24 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Sidebar from "./Components/Sidebar/Sidebar";
 import NavBottom from "./Components/Nav/NavBottom";
 import InfoBar from "./Components/InfoBar/InfoBar.jsx"
+import Welcome from "./Components/Welcome/Welcome.jsx";
 import { useState } from "react";
 
 
-const App = () => {
+const App = (props) => {
+	const {currentUser} = props;
+
+	const currentHour = new Date().getHours();
+    let greetingTime = "Morning!";
+  
+    if (currentHour >= 12) {
+      greetingTime = "Afternoon!";
+    }
+  
+    if (currentHour >= 18) {
+      greetingTime = "Evening!";
+    }
+
 	const [user, setUser] = useState({
 		firstName: "Guy",
 		lastName: "Fieri",
@@ -32,7 +46,10 @@ const App = () => {
 	return (
 		<Router>
 			<div className="App">
-				<Nav userName={`${user.firstName} ${user.lastName} ${user.email}`} handleSubmit={handleSubmit} />
+				<Nav userName={`${user.firstName} ${user.lastName}`} handleSubmit={handleSubmit} />
+				<h1 className="greeting">
+        			Good {greetingTime} <br /> {user.firstName} {user.lastName}
+        		</h1> 
 				<div className="body">
 					<Routes>
 						<Route

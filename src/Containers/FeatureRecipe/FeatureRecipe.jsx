@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import RecipeCard from "../../Components/RecipeCard/RecipeCard.jsx";
-import "./FeatureRecipe.scss"
+import "./FeatureRecipe.scss";
+import Welcome from "../../Components/Welcome/Welcome.jsx";
 
-const FeatureRecipe = () => {
+const FeatureRecipe = (props) => {
 	const [featured, setFeatured] = useState("");
 
+  
 	const getFeaturedRecipe = () => {
 		fetch("localhost:3010/api/recipes")
 			.then((res) => {

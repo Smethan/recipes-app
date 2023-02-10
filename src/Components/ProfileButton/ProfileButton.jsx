@@ -18,7 +18,7 @@ const ProfileButton = (props) => {
          <span id="nology-recipes-login">_nology Recipes</span>
          <span id="user-profile-login">User Profile</span>
 
-        <h2 className="login-menu-title">{userName}</h2>
+        <h2 className="login-menu-title">Welcome back, {userName}</h2>
         <form className="login-menu-form" onSubmit={handleSubmit}>
         <span>_____________</span>
             <label className="first-name" htmlFor="login-box-first">First Name</label>
