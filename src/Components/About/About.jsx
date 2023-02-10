@@ -33,7 +33,7 @@ const About = () => {
         <h3 className="name">Taylor</h3>
         <img className="ethan-pic" src={taylor} alt="picture of taylor" />
         <div className='info-container'>
-        <p className="name-info">"I spent most of my childhood in the kitchen learning cooking and baking techniques from my grandma. To this day I often find myself in her kitchen experimenting recipes with her. I also worked at a bakery and created wedding cakes for about 5 years!"</p>
+        <p className="name-info">"I spent most of my childhood in the kitchen learning cooking and baking techniques from my grandma. To this day I often find myself in her kitchen experimenting recipes with her. I also worked at a bakery making wedding cakes for about 5 years!"</p>
         </div>
         {/* <button onClick={handleTaylor}>About Taylor </button> */}
       
