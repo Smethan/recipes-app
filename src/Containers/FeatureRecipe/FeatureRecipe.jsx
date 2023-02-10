@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
 import RecipeCard from "../../Components/RecipeCard/RecipeCard.jsx";
 import "./FeatureRecipe.scss";
-import Welcome from "../../Components/Welcome/Welcome.jsx";
 
 const FeatureRecipe = (props) => {
 	const [featured, setFeatured] = useState("");
 
   
 	const getFeaturedRecipe = () => {
-		fetch("localhost:3010/api/recipes")
+		fetch("http://127.0.0.1:3010/api/recipes")
 			.then((res) => {
 				return res.json();
 			})
@@ -17,19 +16,20 @@ const FeatureRecipe = (props) => {
 			});
 	};
 
-  useEffect(getFeaturedRecipe, [])
-  return (
-    <div className="recipe-card-container">
-      <div className="card">
-      <h1>Recipe of the Month</h1>
-      {featured && featured.map((recipes) => {
-        return <RecipeCard recipes= {recipes} />
-      })}
-      <button>GET THE RECIPE</button>
-    </div>
-    </div>
-  )
-}
+	useEffect(getFeaturedRecipe, []);
+	return (
+		<div className="recipe-card-container">
+			<div className="card">
+				<h1>Recipe of the Month</h1>
+				{featured &&
+					featured.map((recipes) => {
+						return <RecipeCard recipes={recipes} />;
+					})}
+				<button>GET THE RECIPE</button>
+			</div>
+		</div>
+	);
+};
 
 export default FeatureRecipe;
 
