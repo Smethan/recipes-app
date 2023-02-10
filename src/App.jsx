@@ -5,6 +5,7 @@ import UserProfile from "./Containers/UserProfile/UserProfile";
 import Nav from "./Components/Nav/Nav";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Sidebar from "./Components/Sidebar/Sidebar";
+import AllRecipes from "./Containers/AllRecipes/AllRecipes";
 const App = () => {
 	return (
 		<Router>
@@ -23,6 +24,7 @@ const App = () => {
 							path="/"
 						/>
 						<Route element={<UserProfile />} path="/profile" />
+						<Route element= {<AllRecipes/>} path="/all-recipes"  />
 					</Routes>
 				</div>
 			</div>
