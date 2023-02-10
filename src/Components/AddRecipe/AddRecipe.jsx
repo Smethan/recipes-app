@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { env } from "process";
 import "./AddRecipe.scss";
 
 const AddRecipe = () => {
@@ -63,8 +64,8 @@ const AddRecipe = () => {
 	};
 
 	const postRecipe = () => {
-		console.log(addRecipe);
-		fetch(`http://${process.env.REACT_APP_API_IP}:3010/api/recipes`, {
+		console.log(env);
+		fetch(`http://${env.REACT_APP_API_IP}:3010/api/recipes`, {
 			headers: {
 				Accept: "application/json",
 				"content-type": "application/json",
