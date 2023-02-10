@@ -1,3 +1,5 @@
+@use "../../assets/_variables.scss" as *;
+
 /* Position and sizing of burger button */
 .bm-burger-button {
 	position: fixed;
@@ -14,7 +16,7 @@
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-	background: #a90000;
+	background: $dark-orange;
 }
 
 /* Position and sizing of clickable cross button */
@@ -42,6 +44,9 @@
 	background: #373a47;
 	padding: 2.5em 1.5em 0;
 	font-size: 1.15em;
+	box-shadow: -200px 2px 0px 200px rgba(0,0,0,0.39);
+        -webkit-box-shadow: -400px 2px 0px 1600px rgba(0,0,0,0.4);
+       
 }
 
 /* Morph shape necessary with bubble or elastic */
