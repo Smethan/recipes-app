@@ -10,7 +10,7 @@ const port = process.env.PORT || 3010;
 app.use(bodyParser.json());
 app.use(cors());
 
-mongoose.connect(`mongodb://${process.env.MONGO_IP}:27017/recipes`, {
+mongoose.connect(`mongodb://mongo:changeme@${process.env.MONGO_IP}:27017/recipes`, {
 	useNewUrlParser: true,
 });
 
