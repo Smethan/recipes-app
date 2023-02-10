@@ -64,7 +64,7 @@ const AddRecipe = () => {
 
 	const postRecipe = () => {
 		console.log(addRecipe);
-		fetch(`http://${process.env.API_IP}:3010/api/recipes`, {
+		fetch(`http://${process.env.REACT_APP_API_IP}:3010/api/recipes`, {
 			headers: {
 				Accept: "application/json",
 				"content-type": "application/json",

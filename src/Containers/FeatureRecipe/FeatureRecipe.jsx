@@ -6,7 +6,7 @@ const FeatureRecipe = (props) => {
 	const [featured, setFeatured] = useState("");
 
 	const getFeaturedRecipe = () => {
-		fetch(`http://${process.env.API_IP}:3010/api/recipes`)
+		fetch(`http://${process.env.REACT_APP_API_IP}:3010/api/recipes`)
 			.then((res) => {
 				return res.json();
 			})

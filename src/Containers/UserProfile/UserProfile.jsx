@@ -8,7 +8,7 @@ const UserProfile = () => {
 	const [searchTerm, setSearchTerm] = useState("");
 
 	const getUserRecipes = () => {
-		fetch(`http://${process.env.API_IP}:3010/api/recipes`)
+		fetch(`http://${process.env.REACT_APP_API_IP}:3010/api/recipes`)
 			.then((res) => {
 				return res.json();
 			})
