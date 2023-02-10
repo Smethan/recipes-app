@@ -4,7 +4,7 @@ import { S3Client } from "@aws-sdk/client-s3";
 
 const s3Config = {
 	bucketName: process.env.bucket_name,
-	region: process.env.region,
+	region: "us-east-2",
 	accessKeyId: process.env.accessKeyId,
 	secretAccessKey: process.env.secretAccessKey,
 };

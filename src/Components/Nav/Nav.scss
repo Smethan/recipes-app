@@ -25,19 +25,33 @@
 
   .small-link {
     margin-left: 60px;
+    text-decoration: none;
+    color: black;
+    cursor: grab;
+
+    :visited {
+      text-decoration: none;
+      color: black;
+    }
+    :hover {
+      color: black;
+      font-weight: bolder;
+    }
+    :active {
+      text-decoration: none;
+      color: black;
+    }
+
   }
+
   img {
     width:25%
   }
-}
-h2 {
-  margin-left: 115px;
+
 }
 
-.small-link:hover {
-  filter: brightness(300%);
-  cursor: grab;
-  font-weight: bolder;
+h2 {
+  margin-left: 115px;
 }
 
 @media screen and (min-width: 992px) {
