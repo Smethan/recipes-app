@@ -1,50 +1,55 @@
 import "./ProfileButton.scss"
-import { PopupMenu } from "react-simple-widgets";
 import userIcon from "../../Images/user-icon.png";
+import whiteCross from "../../Images/white-cross.png";
+import Button from "../../Components/Button/Button.jsx";
 
-const ProfileButton = () => {
-
-
-    // Create logic for name and email submission
-    // Change yellow circle to nology recipes/user profiles
-    // Change font size, insert submit button
-    // Create logic for logout button => resets to empty strings
+const ProfileButton = (props) => {
+    const { userName, toggleLogin, handleSubmit } = props;
     
   return (
-    <div id="app">
-      <div className="text-end">
-        <PopupMenu>
-        <img src={userIcon} className="profile" alt="user profile icon" width="50" height="50"   />
+        <div className="login-menu">
+            <div className="login-menu-content">
+                <img
+                src={whiteCross}
+                alt="Close menu"
+                className="login-menu-cross"
+                onClick={toggleLogin}
+            />
+         <span id="nology-recipes-login">_nology Recipes</span>
+         <span id="user-profile-login">User Profile</span>
 
-          <div className="card text-start">
-            <div className="card-body px-4 py-4">
-              <div className="text-center mx-auto mb-4">
-                <span id="nology-recipes-login">_nology Recipes</span>
-                <span id="user-profile-login">User Profile</span>
-              </div>
+        <h2 className="login-menu-title">{userName}</h2>
+        <form className="login-menu-form" onSubmit={handleSubmit}>
+        <span>_____________</span>
+            <label className="first-name" htmlFor="login-box-first">First Name</label>
+            <input
+                type="text"
+                name="firstName"
+                className="login-box-first"
+                placeholder="First Name"
+            />
+            <label className="last-name" htmlFor="login-box-last">Last Name</label>
+            <input 
+                type="text" 
+                name="lastName" 
+                className="login-box-last" 
+                placeholder="Last Name"
+            />
 
-            <div className="input-boxes-container">
-                <span>First Name</span>
-                <input className="input-box" type="text" placeholder="First Name"></input>
-                <span>Last Name</span>
-                <input className="input-box" type="text" placeholder="Last Name"></input>
-                <span>Email Address</span>
-                <input className="input-box" type="email" placeholder="Email Address"></input>
-             </div>
-
-             <hr />
-
-              <div className="d-grid">
-                <button className="btn btn-secondary">
-                  <small>Logout</small>
-                </button>
-              </div>
+            <label className="email-input" htmlFor="login-box-email">Email Address</label>
+            <input 
+                className="input-box-email" 
+                type="email" 
+                placeholder="Email Address" 
+            />
+            <button className="submit-button-profile">Submit</button>
+        </form>
             </div>
-          </div>
-        </PopupMenu>
-      </div>
-    </div>
-  );
-}
+            </div>
+            
+       
+        
+   
+  )}
 
 export default ProfileButton;

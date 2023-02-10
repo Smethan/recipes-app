@@ -10,24 +10,34 @@
     align-items: center;
     margin: 10;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
     padding: 10;
-    padding-bottom: 20px;
+    padding-bottom: 2px;
   }
-
-  .ham {
-    margin-left: 25px;
-    cursor: grab;
-  }
-
   .profile {
-    margin-right: 25px;
-    cursor: grab;
+    max-width: 53px;
+    margin-right: 50px;
+  } 
+  .profile:hover {
+      cursor: grab;
+      color:$dark-orange;
   }
+
+  .small-link {
+    margin-left: 60px;
+  }
+  img {
+    width:25%
+  }
+}
+h2 {
+  margin-left: 115px;
 }
 
 .small-link:hover {
-  filter: brightness(100%);
+  filter: brightness(300%);
+  cursor: grab;
+  font-weight: bolder;
 }
 
 @media screen and (min-width: 992px) {
